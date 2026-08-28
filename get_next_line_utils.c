@@ -6,13 +6,13 @@
 /*   By: bpassos- <bpassos-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 01:55:20 by charlie           #+#    #+#             */
-/*   Updated: 2026/08/28 16:58:27 by bpassos-         ###   ########.fr       */
+/*   Updated: 2026/08/28 21:13:57 by bpassos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-bool	find_new_line (char *line)
+bool	find_new_line(char *line)
 {
 	if (!line)
 		return (NOT_FOUND);
@@ -55,6 +55,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t nbytes)
 	}
 	return (dest);
 }
+
 char	*join_line(char	*line, char *buffer)
 {
 	int		line_len;
@@ -75,6 +76,7 @@ char	*join_line(char	*line, char *buffer)
 	free(line);
 	return (new);
 }
+
 void	update_buffer(char	*buffer)
 {
 	size_t	new_start;

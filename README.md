@@ -1,5 +1,4 @@
-*This project has been created as part
-of the 42 curriculum by bpassos-.*
+*This project has been created as part of the 42 curriculum by bpassos-.*
 
 # Description
 
@@ -24,7 +23,7 @@ During compilation the user is able to define the buffer directly by insertinf t
 
 ### Usage
 
-to test this function, create a file called file.txt and use the main below to see every line in a loop until the end of the file.
+To test this function, create a file called file.txt and use the main below to see every line in a loop until the end of the file.
 
 ```c
 #include "get_next_line.h"
@@ -81,3 +80,4 @@ Otherwise, if no newline was found, buffer[0] is set to '\0' signalling an empty
 
 - https://www.youtube.com/watch?v=-Mt2FdJjVno
 - 42 peers.
+- No AI was used for this project.
