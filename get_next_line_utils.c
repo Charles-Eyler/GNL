@@ -6,23 +6,23 @@
 /*   By: bpassos- <bpassos-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 01:55:20 by charlie           #+#    #+#             */
-/*   Updated: 2026/08/28 05:32:23 by bpassos-         ###   ########.fr       */
+/*   Updated: 2026/08/28 16:58:27 by bpassos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*find_new_line (char *line)
+bool	find_new_line (char *line)
 {
 	if (!line)
-		return (NULL);
+		return (NOT_FOUND);
 	while (*line)
 	{
 		if (*line == '\n')
-			return (line + 1);
+			return (FOUND);
 		line++;
 	}
-	return (NULL);
+	return (NOT_FOUND);
 }
 
 size_t	line_len_gnl(char	*line)
@@ -43,7 +43,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t nbytes)
 {
 	u_char			*temp_dest;
 	const u_char	*temp_src;
-	size_t	i;
+	size_t			i;
 
 	temp_dest = dest;
 	temp_src = src;

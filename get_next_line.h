@@ -6,7 +6,7 @@
 /*   By: bpassos- <bpassos-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 01:55:09 by charlie           #+#    #+#             */
-/*   Updated: 2026/08/28 05:42:29 by bpassos-         ###   ########.fr       */
+/*   Updated: 2026/08/28 17:00:56 by bpassos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <stdbool.h>
+# include <stdio.h>
+# include <string.h>
 
 #ifndef BUFFER_SIZE
 # define BUFFER_SIZE 42
@@ -24,8 +27,10 @@
 #endif
 
 # define loop 1
+# define FOUND 1
+# define NOT_FOUND 0
 
-char	*find_new_line (char *line);
+bool	find_new_line (char *line);
 size_t	line_len_gnl(char	*line);
 void	*ft_memcpy(void *dest, const void *src, size_t nbytes);
 char	*join_line(char	*line, char *buffer);
